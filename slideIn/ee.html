@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <image stroke="null" xlink:href="Rhino_Child.png" id="svg_1" height="165.66667" width="350.999957" y="168.500004" x="0"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_2" y="102.666667" x="334.333333" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Hello World</text>
+ </g>
+</svg>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script type="text/javascript">
+
+	TweenMax.fromTo("#svg_1",1,{ x:-400},{x:100}); 
+	TweenMax.fromTo("#svg_2",1,{ x:400},{x:100}); 
+</script>
+</body>
+</html>

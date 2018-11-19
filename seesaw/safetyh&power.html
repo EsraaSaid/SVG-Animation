@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <image stroke="null" xlink:href="1.png" id="svg_1" height="39" width="381" y="336" x="93.99998"/>
+  <image stroke="null" xlink:href="2.png" id="svg_2" height="10" width="561.99998" y="330" x="3"/>
+  <image stroke="null" xlink:href="3.png" id="svg_3" height="94" width="91" y="219.5" x="8.5"/>
+  <image stroke="null" xlink:href="4.png" id="svg_4" height="90" width="99" y="222.5" x="440.5"/>
+ </g>
+</svg>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script type="text/javascript">
+	TweenMax.to("#svg_3", 2, {y:-30, ease:Power4.easeOut});
+	TweenMax.to("#svg_3", 2, {y:30, ease:Power4.easeOut}).delay(1);
+	TweenMax.to("#svg_3", 2, {y:0, ease:Power4.easeOut}).delay(2);
+
+	TweenMax.to("#svg_4", 2, {y:30, ease:Power4.easeOut});
+	TweenMax.to("#svg_4", 2, {y:-30, ease:Power4.easeOut}).delay(1);
+	TweenMax.to("#svg_4", 2, {y:0, ease:Power4.easeOut}).delay(2);
+	
+	TweenMax.to("#svg_2" , 2 , { rotation: 4, transformOrigin:"center" , ease:Power4.easeOut});
+	TweenMax.to("#svg_2" , 2 , { rotation: -4, transformOrigin:"center" , ease:Power4.easeOut}).delay(1);
+	TweenMax.to("#svg_2" , 2 , { rotation:0, transformOrigin:"center" , ease:Power4.easeOut}).delay(2);
+
+
+
+
+</script>
+</body>
+</html>
